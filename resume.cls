@@ -28,6 +28,9 @@
 % No indent
 \setlength\parindent{0pt}
 
+% Left justify text
+\raggedright
+
 % -------------------- COMMANDS --------------------
 
 % Horizontal line
@@ -69,6 +72,9 @@
         \href{#3}{\icon{#1} #2 \;}%
     \end{small}%
 }
+
+% Personal statement - just adds spacing above
+\newenvironment{personalstatement}{\vspace{8pt}}{}
 
 % Section title, including horizontal line divider above
 % - arg1 = section title
