@@ -48,7 +48,7 @@
     \hspace{-5pt}%
     $%
     \begin{array}{l}%
-    \includegraphics[width=#1]{img/#2.png}%
+    \includegraphics[width=#1]{imgs/#2.png}%
     \end{array}%
     $%
     \hspace{-5pt}%
