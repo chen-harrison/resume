@@ -7,5 +7,5 @@ $ sudo apt update && sudo apt install -y texlive texlive-formats-extra latexmk
 ```
 VS Code extension for editing:
 ```
-code --install-extension james-yu.latex-workshop --force
+$ code --install-extension james-yu.latex-workshop --force
 ```
