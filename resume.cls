@@ -13,8 +13,8 @@
 \renewcommand{\Huge}{\fontsize{28pt}{33.6pt}\selectfont}
 
 % Packages used
-\RequirePackage[a4paper, margin=0.5in]{geometry}
 \RequirePackage{enumitem}
+\RequirePackage[a4paper, margin=0.5in]{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{helvet}
 \RequirePackage[colorlinks=true, urlcolor=blue]{hyperref}
