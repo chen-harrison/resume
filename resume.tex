@@ -12,11 +12,11 @@
 \urlinfo{github}{chen-harrison}{https://github.com/chen-harrison}
 
 \begin{personalstatement}
-  Robotics software engineer with experience in developing and integrating navigation,
-  perception, and mapping algorithms for mobile robotics systems. Proficient in
+  Robotics software engineer with experience in developing and integrating perception,
+  mapping, and navigation algorithms for mobile robotics systems. Proficient in
   programming with C++ and Python, as well as robotics-specific libraries such as ROS and
-  Eigen. I am a self-driven learner who enjoys tackling complex challenges, especially in
-  a collaborative manner. My goal is to leverage my skills and knowledge to build
+  PyTorch. I am a self-driven learner who enjoys tackling complex challenges, especially
+  in a collaborative manner. My goal is to leverage my skills and knowledge to build
   technologies that make a positive impact.
 \end{personalstatement}
 
@@ -24,14 +24,15 @@
 
 \entry{Autonomy Engineer}{PDW}{New Rochelle, NY}{Mar 2022 – Jan 2025}
 \begin{details}
-\item Augmented quadcopter’s autonomy stack with trajectory generation capable of
-  obstacle avoidance and breadth-first search for safe start and goal positions,
-  increasing safety and reliability while flying
-\item Utilized runtime polymorphism to modularize navigation pipeline, improving code
-  abstraction and allowing for multiple flight modes with unique implementations
 \item Evaluated stereo depth DNNs on Nvidia Jetson; calibrated Arducam sensors for
   disparity to depth conversion, wrote nodes to run TensorRT and ONNX models, and
   explored quantization options using MATLAB and Nvidia TAO
+\item Trained learning-based feature detector on a custom satellite image dataset,
+  yielding a completely new set of keypoints and descriptors than the pretrained model,
+  but with identical cosine similarity matching performance
+\item Augmented quadcopter’s autonomy stack with trajectory generation capable of
+  obstacle avoidance and breadth-first search for safe start and goal positions,
+  increasing safety and reliability while flying
 \item Integrated multi-sensor OctoMap and Voxblox 3D mapping algorithms into a C++ ROS
   package, enabling quadcopter to map occupancy by combining input from forward- and
   downward-facing RealSense cameras
@@ -68,7 +69,7 @@ MI}{Jan 2020 – May 2020}
 \entry{Master of Science in Robotics}{University of Michigan}{Ann Arbor, MI}{Dec 2020}
 \begin{details}
 \item \textbf{GPA: 3.96/4.00}
-\item Relevant coursework: Mobile Robotics, Deep Learning for Computer Vision, Robot
+\item Relevant coursework: Deep Learning for Computer Vision, Mobile Robotics, Robot
   Modeling and Control
 \end{details}
 
