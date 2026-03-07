@@ -1,0 +1,15 @@
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/cmhughes/latexindent.pl.git
+    rev: V3.24.7
+    hooks:
+      - id: latexindent
+        args: ["-wd", "-s", "-m", "-y=defaultIndent:'  ',modifyLineBreaks:textWrapOptions:columns:100"]

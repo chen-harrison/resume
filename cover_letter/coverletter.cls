@@ -41,11 +41,11 @@
 % - arg1 = name
 \newcommand{\name}[1]{
   \begin{center}\large\uppercase{\textbf{#1}}
-\end{center}\vspace{-4pt}}
+  \end{center}\vspace{-4pt}}
 
 \newcommand{\contactinfo}[3]{\vspace{-10pt}
   \begin{center}\small
-    #1 \hspace{4pt}\textbullet\hspace{4pt} 
+    #1 \hspace{4pt}\textbullet\hspace{4pt}
     #2 \hspace{4pt}\textbullet\hspace{4pt}
     #3
-\end{center}\vspace{-10pt}}
+  \end{center}\vspace{-10pt}}

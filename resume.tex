@@ -7,92 +7,89 @@
 \info{email}{hchen.robotics@gmail.com}
 \info{phone}{+1(734)968-5295}
 \info{location}{New York, NY}
-\urlinfo{website}{chen-harrison.github.io}{https://chen-harrison.github.io}
 \urlinfo{linkedin}{chen-harrison}{https://linkedin.com/in/chen-harrison}
 \urlinfo{github}{chen-harrison}{https://github.com/chen-harrison}
+\urlinfo{website}{chen-harrison.github.io}{https://chen-harrison.github.io}
 
 \begin{personalstatement}
-  Robotics software engineer with experience in developing and integrating navigation,
-  perception, and mapping algorithms for mobile robotics systems. Proficient in
-  programming with C++ and Python, as well as robotics-specific libraries such as ROS and
-  Eigen. I am a self-driven learner who enjoys tackling complex challenges, especially in
-  a collaborative manner. My goal is to leverage my skills and knowledge to build
-  technologies that make a positive impact.
+  Robotics software engineer with 4+ years experience developing autonomous navigation
+  and perception systems for UAVs and automotive vehicles. Proficient in C++, Python, and ROS 2.
 \end{personalstatement}
 
 \section{Experience}
 
 \entry{Senior Robotics Software Engineer}{OKSI}{Torrance, CA (Remote)}{Mar 2025 – Present}
 \begin{details}
-\item Integrated GPS-denied navigation algorithm with customer hardware, writing sensor drivers
-  and building a Docker image to run on the vehicle, achieving open-loop results with
-  less than 10m of horizontal error
+  \item Iterated on VSLAM GPS-denied navigation software product to increase robustness; improved accuracy
+  of position estimate when recovering from temporary outages, added option to bypass FCU EKF when
+  receiving input vehicle position, and optimized flight data recording to reduce CPU overhead while
+  ensuring persistence on power loss
+  \item Supported integration of navigation software into customer systems by debugging driver software,
+  tailoring adapter nodes to handle incoming vehicle telemetry, and fixing edge cases captured by
+  recorded flight data
+  \item Implemented TensorRT inference and SAHI for YOLOv8 object detection, reducing model latency and
+  increasing detection distance for high-resolution imagery
+  \item Designed and maintained CI pipelines that perform code formatting checks, ROS bag playback testing,
+  Docker image builds, and automated deployments
 \end{details}
 
 \entry{Autonomy Engineer}{PDW}{New Rochelle, NY}{Mar 2022 – Jan 2025}
 \begin{details}
-\item Augmented quadcopter’s autonomy stack with trajectory generation capable of
-  obstacle avoidance and breadth-first search for safe start and goal positions,
-  increasing safety and reliability while flying
-\item Utilized runtime polymorphism to modularize navigation pipeline, improving code
-  abstraction and allowing for multiple flight modes with unique implementations
-\item Evaluated stereo depth DNNs on Nvidia Jetson; calibrated Arducam sensors for
-  disparity to depth conversion, wrote nodes to run TensorRT and ONNX models, and
-  explored quantization options using MATLAB and Nvidia TAO
-\item Integrated multi-sensor OctoMap and Voxblox 3D mapping algorithms into a C++ ROS
-  package, enabling quadcopter to map occupancy by combining input from forward- and
-  downward-facing RealSense cameras
+  \item Integrated GCOPTER trajectory generation algorithm into quadcopter’s autonomy stack, augmenting
+  with BFS for selecting safe start and goal positions
+  \item Evaluated depth estimation models HITNET and ESS DNN as a potential alternative to LiDAR;
+  calibrated stereo Arducam sensors and benchmarked TensorRT and ONNX inference on Nvidia Jetson
+  Xavier NX
+  \item Wrote a ROS 1 package that supported OctoMap and Voxblox for creating a unified 3D occupancy grid
+  map from forward- and downward-facing RealSense cameras
 \end{details}
 
 \entry{Robotics Engineer}{Jugaad Labs}{Philadelphia, PA}{Mar 2021 – Mar 2022}
 \begin{details}
-\item Developed an automotive situational awareness system for semi-trucks in Python and
-  ROS, using center point-based object detection and Kalman filter tracking to identify
-  and monitor nearby vehicles
-\item Built application with Nvidia Isaac SDK to perform object detection in Isaac Sim
-  warehouse environment, serving as a theoretical sensing foundation for autonomous logistics
+  \item Developed an automotive situational awareness system for semi-trucks, using CenterTrack to detect
+  and track nearby vehicles in an image, then projecting the tracks into 3D space and applying a
+  Kalman filter to the trajectories
+  \item Built an application with Nvidia Isaac SDK to perform object detection in Isaac Sim warehouse
+  environment, demonstrating a sensing architecture for autonomous logistics in simulation
 \end{details}
 
-\entry{Applied Product Development Intern}{FANUC America}{Rochester Hills, MI}{Jun 2020 – Aug 2020}
-\begin{details}
-\item Strengthened functionality for ArcTool recovery mechanism using proprietary
-  programming language Karel, enabling welding robots to recalibrate in any reachable end
-  effector pose
-\end{details}
-
-% \entry{Student / Team Member}{Robotic Systems Laboratory Course (ROB 550)}{Ann Arbor,
-% MI}{Jan 2020 – May 2020}
+% \entry{Applied Product Development Intern}{FANUC America}{Rochester Hills, MI}{Jun 2020 – Aug 2020}
 % \begin{details}
-% \item Implemented a simulated SLAM robot in C++ with 2D occupancy grid mapping, odometry
-%   motion model, beam measurement model, Monte Carlo localization, and A* path planning
-% \item Collaborated with teammates on the development of an inverted pendulum robot using
-%   C and RCL, including PID control for balancing, manual steering via joystick, and
-%   autonomous movement along series of waypoints
+%   \item Strengthened functionality for ArcTool recovery mechanism using proprietary programming language
+%   Karel, enabling welding robots to recalibrate in any reachable end effector pose
+% \end{details}
+
+% \entry{Student / Team Member}{Robotic Systems Laboratory Course (ROB 550)}{Ann Arbor, MI}{Jan 2020 – May 2020}
+% \begin{details}
+%   \item Implemented a simulated SLAM robot in C++ with 2D occupancy grid mapping, odometry motion model,
+%   beam measurement model, Monte Carlo localization, and A* path planning
+%   \item Collaborated with teammates on the development of an inverted pendulum robot using C and RCL,
+%   including PID control for balancing, manual steering via joystick, and autonomous movement along
+%   series of waypoints
 % \end{details}
 
 \section{Education}
 
 \entry{Master of Science in Robotics}{University of Michigan}{Ann Arbor, MI}{Dec 2020}
 \begin{details}
-\item \textbf{GPA: 3.96/4.00}
-\item Relevant coursework: Mobile Robotics, Deep Learning for Computer Vision, Robot
-  Modeling and Control
+  \item \textbf{GPA: 3.96/4.00}
+  \item Relevant coursework: Mobile Robotics, Deep Learning for Computer Vision, Robot Modeling and Control
 \end{details}
 
 \entry{Bachelor of Science in Mechanical Engineering}{Northwestern University}{Evanston,
-IL}{June 2019}
+  IL}{June 2019}
 \begin{details}
-\item \textbf{GPA: 3.80/4.00}
-\item Relevant coursework: Intro to Mechatronics, Machine Dynamics, Advanced Solid Modeling
-\item Activities: Education Chair @ Refresh Dance Crew, Social Chair @ Chinese Students
-  Association, Tau Beta Pi
+  \item \textbf{GPA: 3.80/4.00}
+  \item Relevant coursework: Intro to Mechatronics, Machine Dynamics, Advanced Solid Modeling
+  \item Activities: Education Chair @ Refresh Dance Crew, Social Chair @ Chinese Students Association, Tau
+  Beta Pi
 \end{details}
 
 \section{Skills \& Interests}
-\textbf{Software:} C++, Python, MATLAB, Bash, Git, Docker \\
-\textbf{Robotics:} ROS 2, Eigen, OpenCV, PCL, PyTorch, 3D geometry, kinematics, Bayesian
-statistics, sensor calibration \\
-\textbf{Interests:} soccer, running, dance, cooking, environmental conservation \\~\\
-\textsuperscript{\textasteriskcentered}No work authorization required
+\textbf{Software:} C++, Python, Bash, Git, Docker, MATLAB, CI/CD \\
+\textbf{Robotics:} ROS 1/ROS 2, Eigen, OpenCV, PyTorch, Nvidia Jetson, sensor calibration \\
+\textbf{Interests:} soccer, running, cooking, environmental conservation \\~\\
+
+\textsuperscript{\textasteriskcentered} US Citizen, no work authorization required
 
 \end{document}
