@@ -1,7 +1,7 @@
 % Required for all classes
 \NeedsTeXFormat{LaTeX2e}
 % Class name, date, descrip
-\ProvidesClass{coverletter}[2025-01-28 Custom cover letter class]
+\ProvidesClass{cover_letter}[2025-01-28 Custom cover letter class]
 
 % Load default article class for missing commands (enables enumitem)
 \LoadClass{article}

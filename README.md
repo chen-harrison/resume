@@ -1,4 +1,4 @@
-# Resume (in LaTeX!)
+# Job Recruitment Materials (in LaTeX!)
 
 ### Installation
 LaTeX dependencies:
